@@ -1,11 +1,13 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import { UserContext, UserProvider } from './context/UserContext'
+import Login from './components/Login'
 
 const App = () => {
   return (
-    <View>
-      <Text>App</Text>
-    </View>
+  <UserProvider>
+      <Login/>
+  </UserProvider>
   )
 }
 
